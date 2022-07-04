@@ -30,7 +30,8 @@ results = session.query(Measurement.date, Measurement.tobs).filter(extract('mont
 list(results.all())
 Next, I made a data frame to hold the June temperatures and their respective dates.
 
-june_df.PNG
+![image](https://user-images.githubusercontent.com/84139825/177215429-c372aa7c-1ae5-4dc0-bc0b-e13fc0f17e9a.png)
+
 
 December
 
@@ -46,16 +47,19 @@ results = session.query(Measurement.date, Measurement.tobs).filter(extract('mont
 list(results2.all())
 I then put the December temperatures and dates in a data frame.
 
-december_df.PNG
+![image](https://user-images.githubusercontent.com/84139825/177215487-78e8b3d7-c210-45ba-968e-f9e77cb22d2b.png)
+
 
 ## Results
 June
 
-june_summary.PNG
+![image](https://user-images.githubusercontent.com/84139825/177215508-5f283b83-6449-4def-8079-20dffec78b82.png)
+
 
 December
 
-december_summary.PNG
+![image](https://user-images.githubusercontent.com/84139825/177215528-a7e052d7-8442-4d80-b40c-a777c71ae578.png)
+
 
 - There are not significant differences between June weather and December weather. This is unsurprising, given Hawaii's tropical climate. But this helps confirm our intuition that having our surf shack open year round will not face many problems from uncooperative weather. The mean June temperature is roughly 75 degrees, and the mean December temperature is a balmy 71.
 
